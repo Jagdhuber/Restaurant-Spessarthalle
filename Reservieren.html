@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tischreservierung</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="Index.html">Zurück</a>
+        <a href="Bestellung.html">Zur Bestellung</a>
+        <a href="Impresum.html" class="button">Impressum</a>
+        <a href="Inhaltsstoffe.html" class="button">Inhaltsstoffe</a>
+        <a href="DSVGO-de.pdf" class="button">Datenschutzerklärung</a>
+    </nav>
+
+    <h1>Tischreservierung</h1>
+    <form action="mailto:restaurant-spessarthalle@web.de" method="post" enctype="text/plain">
+        <div class="input-group">
+            <label>
+                Nachname:
+                <input type="text" name="nachname" required>
+            </label>
+        </div>
+        <div class="input-group">
+            <label>
+                Vorname:
+                <input type="text" name="vorname" required>
+            </label>
+        </div>
+        <div class="input-group">
+            <label>
+                Straße:
+                <input type="text" name="strasse" required>
+            </label>
+        </div>
+        <div class="input-group">
+            <label>
+                Telefon:
+                <input type="number" name="telefon" required>
+            </label>
+        </div>
+        <div class="input-group1">
+            <label>
+                Wieviele Personen?
+                <input type="number" name="personenanzahl" min="0" oninput="this.value = Math.abs(this.value)" required>
+            </label>
+        </div>
+        <div class="input-group1">
+            Davon Kinder?
+            <input type="number" name="kinder" id="kinder" min="0" oninput="this.value = Math.abs(this.value)">
+        </div>
+        <div class="input-group1">
+            Rollstuhlfahrer dabei?
+            <input type="number" name="rollstuhlfahrer" id="rollstuhlfahrer" min="0"
+                oninput="this.value = Math.abs(this.value)">
+        </div>
+        <div class="input-group1">
+            Werden Kinderstühle benötigt?
+            <input type="number" name="kinderstuehle" id="kinderstuehle" min="0"
+                oninput="this.value = Math.abs(this.value)">
+        </div>
+        <div class="input-group2">
+            <a href="DSVGO-de.pdf" class="button">Zur DSVGO</a>
+            <br>
+            <br><input type="checkbox" id="terms" name="terms" required><br>
+            <label for="terms">Ich habe die DSVGO gelesen und akzeptiere sie.</label><br>
+            <br>
+            <input type="submit" value="Reservieren">
+        </div>
+    </form>
+</body>
+
+</html>

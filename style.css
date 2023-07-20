@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+/* Buttons auf jeder seite*/
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+nav a:hover {
+  background-color: #45a049;
+}
+
+/*Bilder auf der ersten Seite*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.image {
+  flex-basis: calc(33.33% - 10px);
+  height: 200px;
+  border: 2px solid;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .image {
+    flex-basis: calc(50% - 10px);
+    height: 150px;
+  }
+}
+
+.image1 {
+  background-image: url("rohtash.png");
+}
+
+.image2 {
+  background-image: url("Gast-Blau1.jpg");
+}
+
+.image3 {
+  background-image: url("Gast-rot1.jpg");
+}
+
+.image5 {
+  background-image: url("Schafskäse.jpg");
+}
+
+.image6 {
+  background-image: url("Getränke.jpg");
+}
+
+.image7 {
+  background-image: url("Gast-ohne2.jpg");
+}
+
+/* Pdf in reservieren HTML*/
+.pdf-container {
+  width: 100%;
+  height: 1000px;
+}
+
+/*Beginn des Formulars*/
+form {
+  max-width: 250px;
+  margin: 20px auto;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  flex-basis: 200px;
+  margin-right: 10px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"],
+.input-group textarea {
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.input-group button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #45a049;
+}
+
+/* Basisstile für die Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-container,
+.pdf-container {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Stile für das Formular  Reservieren und Bestellung*/
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div {
+  margin-bottom: 10px;
+  flex-basis: calc(50% - 5px);
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+}
+
+/* Stile für das PDF in Bestellung*/
+.pdf-container {
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+/* Responsives Design */
+@media screen and (max-width: 768px) {
+  form div {
+    flex-basis: 100%;
+  }
+
+  .form-container,
+  .pdf-container {
+    flex-basis: 100%;
+  }
+}
+
+/* Änderung für die Checkbox */
+#terms {
+  width: 30px;
+  height: 30px;
+}
+
+/*Inhaltsstoffe staylig*/
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section {
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+/*nebeneinander*/
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+/*Hintergrundfarbe*/
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Neue Regeln für das Impressum */
+
+/* Vergrößern und zentrieren der Angaben */
+.angaben {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Chef in Dunkelblau und größer */
+.chef {
+  font-size: 24px;
+  text-align: center;
+  color: darkblue;
+}
+
+/* Einrahmen und zentrieren von Kontakt */
+.kontakt {
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Einrahmen und Einrücken von Haftungsausschluss */
+.haftungsausschluss {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Neue Regeln für das Impressum */
+
+/* Vergrößern und zentrieren der Angaben */
+.angaben {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Chef in Dunkelblau und größer */
+.chef {
+  font-size: 24px;
+  color: darkblue;
+}
+
+/* Einrahmen und zentrieren von Kontakt */
+.kontakt {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  font-size: 18px;
+}
+
+/* Einrahmen und Einrücken von Haftungsausschluss */
+.haftungsausschluss {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Einrahmen und Einrücken von datenschutz */
+.datenschutz {
+  border: 3px solid;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Neue Regeln für den Datenschutz-Button */
+
+/* Stil für den Button */
+.datenschutz .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, font-weight 0.3s;
+}
+
+/* Stil für den Button beim darauf Zeigen (hover) */
+.datenschutz .button:hover {
+  background-color: darkred;
+  font-weight: bold;
+}
+
+/* Stil für den Button */
+.input-group2 .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, font-weight 0.3s;
+}
+
+/* Stil für den Button beim darauf Zeigen (hover) */
+.input-group2 .button:hover {
+  background-color: darkred;
+  font-weight: bold;
+}
